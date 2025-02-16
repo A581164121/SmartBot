@@ -27,16 +27,18 @@ SmartBot is built using structured YAML files, making it simple for businesses t
 - Add or edit conversation pairs based on your business needs.  
 - Example: If you run an online store, modify the chatbot’s response for FAQs like:  
 
-  ```yaml
+  ```SmarBot
   conversations:
-    - - "Do you offer free shipping?"
-      - "Yes, we provide free shipping on orders above $50."
-  ```
+    - - "Customer: "How durable is this product compared to others in the market?"
+      - "SmartBot: "Great question! Our product is built with premium, industry-grade materials designed to withstand daily wear and tear while maintaining its performance. We conduct rigorous stress tests, and it comes with a [X-year warranty] for added peace of mind. Many of our customers have used it for years without issues—durability is a cornerstone of our brand. Would you like to see a demo of its resilience features?"
 
-- Save the file and retrain the chatbot using:  
-  ```sh
-  python SmartBot.py
-  ```  
+    - - "Customer: "Why is this product priced higher than others?"
+      - "SmartBot: "I appreciate you asking! While our initial investment might be slightly higher, our product is engineered for long-term value. It’s energy-efficient, requires minimal maintenance, and includes free lifetime support, which saves you money over time. Plus, we offer flexible payment plans to make it accessible. Let me show you a cost comparison chart to highlight how it pays for itself in [X months/years]!"
+
+    - - "Customer: "Can I trust the warranty/service claims?"
+      - "SmartBot: "Absolutely! We pride ourselves on transparency. Our [X-year] warranty is comprehensive, covering parts, labor, and even accidental damage. Our service team is available 24/7, with an average response time of [X hours]. Still, we’re so confident you’ll love it that we offer a [X-day] satisfaction guarantee—no questions asked. Let’s get you covered!"
+  ```
+  
   Your updated chatbot is now ready to assist your customers with personalized answers.
 
 ### **2. Implement SmartBot on Your Website or Social Media**  
